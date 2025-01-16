@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopMe Products</title>
+</head>
+<body>
+    <section>
+        <!-- Search Section -->
+        <div class="container mt-3 p-5"> <!-- Reduced mt-5 to mt-3 for smaller gap -->
+            <div class="row">
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="ch" placeholder="Search for products">
+                        <button type="submit" class="btn btn-light text-dark ms-3 col-md-2">
+                            <i class="fa-solid fa-magnifying-glass"></i> Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Product Listings Section -->
+        <div class="container mt-3 p-5"> <!-- Reduced mt-5 to mt-3 for smaller gap -->
+            <div class="row">
+                <!-- Sidebar Section -->
+                <div class="col-md-2">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Categories</a>
+                        <a href="#" class="list-group-item list-group-item-action">Electronics</a>
+                        <a href="#" class="list-group-item list-group-item-action">Mobile phones</a>
+                        <a href="#" class="list-group-item list-group-item-action">Clothing</a>
+                    </div>
+                </div>
+
+                <!-- Product Grid Section -->
+                <div class="col-md-10">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="fs-3 text-center">Products</p>
+                            <div class="row">
+                                <!-- Product Card Example -->
+                                <div class="col-md-3 mt-2">
+                                    <div class="card card-sh">
+                                        <div class="card-body text-center">
+                                            <img alt="Laptop" src="img/product-img/laptop.jpg" width="150px" height="150px">
+                                            <p class="fs-5 text-center">Laptop</p>
+                                            <div class="row text-center">
+                                                <p class="fs-6 fw-bold">
+                                                    ₹55000 <span class="fs-6 text-success">10% off</span>
+                                                </p>
+                                                <a href="/viewproduct" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product Card for Smartphone -->
+                                <div class="col-md-3 mt-2">
+                                    <div class="card card-sh">
+                                        <div class="card-body text-center">
+                                            <img alt="Smartphone" src="img/product-img/mobile.jpg" width="150px" height="150px">
+                                            <p class="fs-5 text-center">Smartphone</p>
+                                            <div class="row text-center">
+                                                <p class="fs-6 fw-bold">
+                                                    ₹300 <span class="fs-6 text-success">10% off</span>
+                                                </p>
+                                                <a class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Repeat Product Card for More Products -->
+                                <div class="col-md-3 mt-2">
+                                    <div class="card card-sh">
+                                        <div class="card-body text-center">
+                                            <img alt="Smartwatch" src="img/product-img/monitor.jpg" width="150px" height="150px">
+                                            <p class="fs-5 text-center">Monitor</p>
+                                            <div class="row text-center">
+                                                <p class="fs-6 fw-bold">
+                                                    ₹200 <span class="fs-6 text-success">15% off</span>
+                                                </p>
+                                                <a class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Add more product cards as needed -->
+                                  <div class="col-md-3 mt-2">
+                                    <div class="card card-sh">
+                                        <div class="card-body text-center">
+                                            <img alt="Smartwatch" src="img/product-img/appli.jpg" width="150px" height="150px">
+                                            <p class="fs-5 text-center">Applinces</p>
+                                            <div class="row text-center">
+                                                <p class="fs-6 fw-bold">
+                                                    ₹200 <span class="fs-6 text-success">15% off</span>
+                                                </p>
+                                                <a class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
